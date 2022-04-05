@@ -20,7 +20,7 @@ struct Acceuil: View {
                 {
                Image("toolbar-img")
                     .resizable()
-                    .frame(width: 800, height: 500)
+                    .frame(width: 800, height: 600)
                     .offset(x: 0, y: -510)
                     
                     HStack
