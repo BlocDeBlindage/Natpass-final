@@ -11,6 +11,16 @@
 		A6C089CA27FC18AA00C5334F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089C927FC18AA00C5334F /* ContentView.swift */; };
 		A6C089CC27FC18AE00C5334F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C089CB27FC18AE00C5334F /* Assets.xcassets */; };
 		A6C089CF27FC18AE00C5334F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C089CE27FC18AE00C5334F /* Preview Assets.xcassets */; };
+		A6C089EF27FC1A4800C5334F /* Acceuil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089E527FC1A4800C5334F /* Acceuil.swift */; };
+		A6C089F627FC1A4F00C5334F /* BRASSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089F527FC1A4F00C5334F /* BRASSE.swift */; };
+		A6C089FA27FC1A5F00C5334F /* CRAWL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089F927FC1A5E00C5334F /* CRAWL.swift */; };
+		A6C089FC27FC1A6300C5334F /* DOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089FB27FC1A6300C5334F /* DOS.swift */; };
+		A6C089FE27FC1A6600C5334F /* PAPILLON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089FD27FC1A6600C5334F /* PAPILLON.swift */; };
+		A6C08A0227FC1A6D00C5334F /* resultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0127FC1A6D00C5334F /* resultat.swift */; };
+		A6C08A0427FC1A7100C5334F /* ResultatConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */; };
+		A6C08A0827FC1A8900C5334F /* ServiceWebLecon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */; };
+		A6C08A0C27FC1B4900C5334F /* resultat_recherche.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */; };
+		A6C08A1027FC1BB500C5334F /* ServiceWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		A6C089CB27FC18AE00C5334F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C089CE27FC18AE00C5334F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6C089D027FC18AE00C5334F /* Natpass_macapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Natpass_macapp.entitlements; sourceTree = "<group>"; };
+		A6C089E527FC1A4800C5334F /* Acceuil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Acceuil.swift; sourceTree = "<group>"; };
+		A6C089F527FC1A4F00C5334F /* BRASSE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRASSE.swift; sourceTree = "<group>"; };
+		A6C089F927FC1A5E00C5334F /* CRAWL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRAWL.swift; sourceTree = "<group>"; };
+		A6C089FB27FC1A6300C5334F /* DOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS.swift; sourceTree = "<group>"; };
+		A6C089FD27FC1A6600C5334F /* PAPILLON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAPILLON.swift; sourceTree = "<group>"; };
+		A6C08A0127FC1A6D00C5334F /* resultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultat.swift; sourceTree = "<group>"; };
+		A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultatConnexion.swift; sourceTree = "<group>"; };
+		A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWebLecon.swift; sourceTree = "<group>"; };
+		A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultat_recherche.swift; sourceTree = "<group>"; };
+		A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWeb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +73,17 @@
 			isa = PBXGroup;
 			children = (
 				A6C089C727FC18AA00C5334F /* Natpass_macappApp.swift */,
+				A6C089E527FC1A4800C5334F /* Acceuil.swift */,
 				A6C089C927FC18AA00C5334F /* ContentView.swift */,
+				A6C089F527FC1A4F00C5334F /* BRASSE.swift */,
+				A6C089F927FC1A5E00C5334F /* CRAWL.swift */,
+				A6C089FB27FC1A6300C5334F /* DOS.swift */,
+				A6C089FD27FC1A6600C5334F /* PAPILLON.swift */,
+				A6C08A0127FC1A6D00C5334F /* resultat.swift */,
+				A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */,
+				A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */,
+				A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */,
+				A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */,
 				A6C089CB27FC18AE00C5334F /* Assets.xcassets */,
 				A6C089D027FC18AE00C5334F /* Natpass_macapp.entitlements */,
 				A6C089CD27FC18AE00C5334F /* Preview Content */,
@@ -139,8 +169,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C08A0427FC1A7100C5334F /* ResultatConnexion.swift in Sources */,
+				A6C08A0827FC1A8900C5334F /* ServiceWebLecon.swift in Sources */,
+				A6C08A0C27FC1B4900C5334F /* resultat_recherche.swift in Sources */,
+				A6C08A0227FC1A6D00C5334F /* resultat.swift in Sources */,
+				A6C08A1027FC1BB500C5334F /* ServiceWeb.swift in Sources */,
+				A6C089EF27FC1A4800C5334F /* Acceuil.swift in Sources */,
 				A6C089CA27FC18AA00C5334F /* ContentView.swift in Sources */,
+				A6C089FE27FC1A6600C5334F /* PAPILLON.swift in Sources */,
+				A6C089FC27FC1A6300C5334F /* DOS.swift in Sources */,
 				A6C089C827FC18AA00C5334F /* Natpass_macappApp.swift in Sources */,
+				A6C089FA27FC1A5F00C5334F /* CRAWL.swift in Sources */,
+				A6C089F627FC1A4F00C5334F /* BRASSE.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +317,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "BTSSN.Natpass-macapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +343,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "BTSSN.Natpass-macapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
