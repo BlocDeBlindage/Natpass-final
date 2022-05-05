@@ -6,14 +6,22 @@
 //
 
 import SwiftUI
+import AVKit
+import StackNavigationView
 
 struct BRASSE: View {
     @ObservedObject var retourdatalecon = ServiceWeblecon()
+    @ObservedObject var retourMots_Cle = ServiceWebMotCle()
     @Binding var choix: Int
+    @Binding var video: String
+    @Binding var text:String
+    @Binding var titre:String
     @State  var search = ""
     @State var NageSelectionné: String = ""
+    @State private var selection: Int? = 0
+    
     var body: some View {
-        
+
         ZStack
             {
                 ScrollView {
@@ -37,7 +45,10 @@ struct BRASSE: View {
                     }
                     
                     ForEach (retourdatalecon.resultatlecon) { resultat in
+                        
                         Divider()
+                        Button(action:{self.choix = 7 ;self.video = resultat.lien_video; self.text = resultat.contenu_texte; self.titre = resultat.titre})
+                        {
                         VStack{
                             HStack{
                                     AsyncImage(url:URL(string: resultat.image)){ image in
@@ -48,8 +59,10 @@ struct BRASSE: View {
                                         } placeholder: {
                                             ProgressView()
                                             }
-                                        
-                                        
+                               
+                                    
+                                
+                            
                                         
                                 VStack(alignment: .leading){
                                     
@@ -60,9 +73,13 @@ struct BRASSE: View {
                                
                                     Text(resultat.resume)
                                         .padding()
+                                    
+                              
+                                    
+                                    }
                                 }
                             }
-                        }
+                        }.buttonStyle(PlainButtonStyle())
                     }
                 }
                 }
@@ -91,9 +108,18 @@ struct BRASSE: View {
                              .textFieldStyle(PlainTextFieldStyle()) // changé le style du text
                              .frame(width: 350, height: 0.5)
                              .padding()
+                             
+                             Button(action: { self.choix = 8
+                                 Text("").onAppear(){
+                                     retourMots_Cle.recupdatamots_cle(mots_cle_rechercher: search)
+                                 }})
+                             {
+                                 Image(systemName: "magnifyingglass")
+                             }
                          }
                          .background(Capsule().fill(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1)))// couleur du fond
                          .offset(x: 150, y: -510)
+                         
                          
                          
                          Button(action: { self.choix = 1})
@@ -114,8 +140,10 @@ struct BRASSE: View {
                              .buttonStyle(PlainButtonStyle())
                              .offset(x: 580, y: -510)
                              }
+            }
     }
 }
+    
 
-}
+
 

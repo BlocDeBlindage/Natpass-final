@@ -7,6 +7,7 @@
 
 
 import SwiftUI
+import StackNavigationView
 
 extension NSTextField {
     open override var focusRingType: NSFocusRingType {
@@ -78,51 +79,60 @@ struct CustomsecureField: View { //identique a la fonction customeTextField mais
 struct ContentView: View {
 //    @ObservedObject var retourData = ServiceWeb()
     @State private var choix = 1
-    
+    @State private var video = ""
+    @State private var text = ""
+    @State private var titre = ""
+    @State private var search = ""
     var body: some View {
         VStack{
             switch(choix)
             {
            
             case 2 :
-                Acceuil(choix: $choix)
+                Acceuil(choix: $choix, search: $search)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
                     .transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             
             case 3 :
-                CRAWL(choix: $choix)
+                CRAWL(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+                
                 
             
             case 4 :
-                BRASSE(choix: $choix)
+                BRASSE(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+                  //  .transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             
             case 5 :
-                PAPILLON(choix: $choix)
+                PAPILLON(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+                 //   .transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             
             case 6 :
-                DOS(choix: $choix)
+                DOS(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+                  //  .transition(AnyTransition.move(edge: .trailing)).animation(.default)
    
             case 7 :
-                resultat_recherche(choix: $choix)
+                lecteur_video(choix:$choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+                   // .transition(AnyTransition.move(edge: .trailing)).animation(.default)
+   
+            case 8:
+                Resultat_Recherche(choix: $choix,search: $search,video:$video,text: $text,titre:$titre)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
+                    //.transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             default :
                 connexion(choix: $choix)
@@ -131,6 +141,7 @@ struct ContentView: View {
                     .transition(AnyTransition.move(edge: .leading)).animation(.default)
 
             }
+            
         }
     }
 }
@@ -217,7 +228,7 @@ struct connexion: View {
                         
                         Button(action: { self.click = true
                             retourData.RecupData(nomutilisateur: nomutilisateur, motdepasse: motdepasse)
-                            usleep(500000)
+                            usleep(600000)
                         })
                         {
 
@@ -260,8 +271,3 @@ struct connexion: View {
     } // fin body
 } //fin content
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

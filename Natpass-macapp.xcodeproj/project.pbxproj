@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A673B4772820302100ED5FF0 /* StackNavigationView in Frameworks */ = {isa = PBXBuildFile; productRef = A673B4762820302100ED5FF0 /* StackNavigationView */; };
+		A673B4792820333500ED5FF0 /* lecteur_video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673B4782820333500ED5FF0 /* lecteur_video.swift */; };
 		A6C089C827FC18AA00C5334F /* Natpass_macappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089C727FC18AA00C5334F /* Natpass_macappApp.swift */; };
 		A6C089CA27FC18AA00C5334F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089C927FC18AA00C5334F /* ContentView.swift */; };
 		A6C089CC27FC18AE00C5334F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C089CB27FC18AE00C5334F /* Assets.xcassets */; };
@@ -19,11 +21,13 @@
 		A6C08A0227FC1A6D00C5334F /* resultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0127FC1A6D00C5334F /* resultat.swift */; };
 		A6C08A0427FC1A7100C5334F /* ResultatConnexion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */; };
 		A6C08A0827FC1A8900C5334F /* ServiceWebLecon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */; };
-		A6C08A0C27FC1B4900C5334F /* resultat_recherche.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */; };
 		A6C08A1027FC1BB500C5334F /* ServiceWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */; };
+		A6F17B162823B3060037918A /* ServiceMotCle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F17B152823B3060037918A /* ServiceMotCle.swift */; };
+		A6F17B1A2823C0BD0037918A /* Resultat_Recherche.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F17B192823C0BD0037918A /* Resultat_Recherche.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A673B4782820333500ED5FF0 /* lecteur_video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lecteur_video.swift; sourceTree = "<group>"; };
 		A6C089C427FC18AA00C5334F /* Natpass-macapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Natpass-macapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C089C727FC18AA00C5334F /* Natpass_macappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Natpass_macappApp.swift; sourceTree = "<group>"; };
 		A6C089C927FC18AA00C5334F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,8 +42,9 @@
 		A6C08A0127FC1A6D00C5334F /* resultat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultat.swift; sourceTree = "<group>"; };
 		A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultatConnexion.swift; sourceTree = "<group>"; };
 		A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWebLecon.swift; sourceTree = "<group>"; };
-		A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultat_recherche.swift; sourceTree = "<group>"; };
 		A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceWeb.swift; sourceTree = "<group>"; };
+		A6F17B152823B3060037918A /* ServiceMotCle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMotCle.swift; sourceTree = "<group>"; };
+		A6F17B192823C0BD0037918A /* Resultat_Recherche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resultat_Recherche.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A673B4772820302100ED5FF0 /* StackNavigationView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +85,13 @@
 				A6C089F927FC1A5E00C5334F /* CRAWL.swift */,
 				A6C089FB27FC1A6300C5334F /* DOS.swift */,
 				A6C089FD27FC1A6600C5334F /* PAPILLON.swift */,
-				A6C08A0127FC1A6D00C5334F /* resultat.swift */,
-				A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */,
-				A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */,
+				A6F17B192823C0BD0037918A /* Resultat_Recherche.swift */,
 				A6C08A0F27FC1BB500C5334F /* ServiceWeb.swift */,
-				A6C08A0B27FC1B4900C5334F /* resultat_recherche.swift */,
+				A6C08A0727FC1A8900C5334F /* ServiceWebLecon.swift */,
+				A6F17B152823B3060037918A /* ServiceMotCle.swift */,
+				A6C08A0327FC1A7100C5334F /* ResultatConnexion.swift */,
+				A6C08A0127FC1A6D00C5334F /* resultat.swift */,
+				A673B4782820333500ED5FF0 /* lecteur_video.swift */,
 				A6C089CB27FC18AE00C5334F /* Assets.xcassets */,
 				A6C089D027FC18AE00C5334F /* Natpass_macapp.entitlements */,
 				A6C089CD27FC18AE00C5334F /* Preview Content */,
@@ -115,6 +123,9 @@
 			dependencies = (
 			);
 			name = "Natpass-macapp";
+			packageProductDependencies = (
+				A673B4762820302100ED5FF0 /* StackNavigationView */,
+			);
 			productName = "Natpass-macapp";
 			productReference = A6C089C427FC18AA00C5334F /* Natpass-macapp.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +154,9 @@
 				Base,
 			);
 			mainGroup = A6C089BB27FC18AA00C5334F;
+			packageReferences = (
+				A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */,
+			);
 			productRefGroup = A6C089C527FC18AA00C5334F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,14 +185,16 @@
 			files = (
 				A6C08A0427FC1A7100C5334F /* ResultatConnexion.swift in Sources */,
 				A6C08A0827FC1A8900C5334F /* ServiceWebLecon.swift in Sources */,
-				A6C08A0C27FC1B4900C5334F /* resultat_recherche.swift in Sources */,
 				A6C08A0227FC1A6D00C5334F /* resultat.swift in Sources */,
 				A6C08A1027FC1BB500C5334F /* ServiceWeb.swift in Sources */,
+				A6F17B1A2823C0BD0037918A /* Resultat_Recherche.swift in Sources */,
+				A673B4792820333500ED5FF0 /* lecteur_video.swift in Sources */,
 				A6C089EF27FC1A4800C5334F /* Acceuil.swift in Sources */,
 				A6C089CA27FC18AA00C5334F /* ContentView.swift in Sources */,
 				A6C089FE27FC1A6600C5334F /* PAPILLON.swift in Sources */,
 				A6C089FC27FC1A6300C5334F /* DOS.swift in Sources */,
 				A6C089C827FC18AA00C5334F /* Natpass_macappApp.swift in Sources */,
+				A6F17B162823B3060037918A /* ServiceMotCle.swift in Sources */,
 				A6C089FA27FC1A5F00C5334F /* CRAWL.swift in Sources */,
 				A6C089F627FC1A4F00C5334F /* BRASSE.swift in Sources */,
 			);
@@ -374,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lbrndnr/StackNavigationView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A673B4762820302100ED5FF0 /* StackNavigationView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */;
+			productName = StackNavigationView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6C089BC27FC18AA00C5334F /* Project object */;
 }
