@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A673B4772820302100ED5FF0 /* StackNavigationView in Frameworks */ = {isa = PBXBuildFile; productRef = A673B4762820302100ED5FF0 /* StackNavigationView */; };
 		A673B4792820333500ED5FF0 /* lecteur_video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A673B4782820333500ED5FF0 /* lecteur_video.swift */; };
 		A6C089C827FC18AA00C5334F /* Natpass_macappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089C727FC18AA00C5334F /* Natpass_macappApp.swift */; };
 		A6C089CA27FC18AA00C5334F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C089C927FC18AA00C5334F /* ContentView.swift */; };
@@ -52,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A673B4772820302100ED5FF0 /* StackNavigationView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +122,6 @@
 			);
 			name = "Natpass-macapp";
 			packageProductDependencies = (
-				A673B4762820302100ED5FF0 /* StackNavigationView */,
 			);
 			productName = "Natpass-macapp";
 			productReference = A6C089C427FC18AA00C5334F /* Natpass-macapp.app */;
@@ -155,7 +152,6 @@
 			);
 			mainGroup = A6C089BB27FC18AA00C5334F;
 			packageReferences = (
-				A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */,
 			);
 			productRefGroup = A6C089C527FC18AA00C5334F /* Products */;
 			projectDirPath = "";
@@ -390,25 +386,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lbrndnr/StackNavigationView";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A673B4762820302100ED5FF0 /* StackNavigationView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A673B4752820302100ED5FF0 /* XCRemoteSwiftPackageReference "StackNavigationView" */;
-			productName = StackNavigationView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6C089BC27FC18AA00C5334F /* Project object */;
 }

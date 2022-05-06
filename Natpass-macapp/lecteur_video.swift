@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AVKit
-import StackNavigationView
 
 struct lecteur_video: View {
     @Binding var choix: Int
@@ -36,7 +35,7 @@ struct lecteur_video: View {
 
                     Text(text)
                         .font(.system(size: 20))
-                        .offset(x: -20)
+                       
                     }
         }
         .padding(20)

@@ -7,7 +7,6 @@
 
 
 import SwiftUI
-import StackNavigationView
 
 extension NSTextField {
     open override var focusRingType: NSFocusRingType {

@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AVKit
-import StackNavigationView
 
 struct BRASSE: View {
     @ObservedObject var retourdatalecon = ServiceWeblecon()
