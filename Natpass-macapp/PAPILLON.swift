@@ -32,10 +32,6 @@ struct PAPILLON: View {
                      //afficher image de fond //
                         HStack{
                             VStack(alignment: .leading){
-                    Text("Get data from a web site")
-                        .font(.largeTitle)
-                        .foregroundColor(.blue)
-                        .padding()
                     
                     Text("").onAppear(){
                         retourdatalecon.recupdatalecon(NageSelectionné: "papillon")
@@ -65,7 +61,7 @@ struct PAPILLON: View {
                                     
                                     Text(resultat.titre)
                                     .font(.largeTitle)
-                                    .foregroundColor(.red)
+                                    .foregroundColor(Color(red: 49/255, green: 140/255, blue: 255/255, opacity:1))
                                     .padding()
                                
                                     Text(resultat.resume)
@@ -112,7 +108,8 @@ struct PAPILLON: View {
                                  }})
                              {
                                  Image(systemName: "magnifyingglass")
-                             }
+                             } .buttonStyle(PlainButtonStyle())
+                                 .offset(x: -15)
                          }
                          .background(Capsule().fill(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1)))// couleur du fond
                          .offset(x: 150, y: -510)

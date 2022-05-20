@@ -91,8 +91,7 @@ struct ContentView: View {
                 Acceuil(choix: $choix, search: $search)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .trailing)).animation(.default)
-                
+
             
             case 3 :
                 CRAWL(choix: $choix,video:$video,text: $text,titre:$titre)
@@ -112,32 +111,27 @@ struct ContentView: View {
                 PAPILLON(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                 //   .transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             
             case 6 :
                 DOS(choix: $choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                  //  .transition(AnyTransition.move(edge: .trailing)).animation(.default)
    
             case 7 :
                 lecteur_video(choix:$choix,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                   // .transition(AnyTransition.move(edge: .trailing)).animation(.default)
    
             case 8:
                 Resultat_Recherche(choix: $choix,search: $search,video:$video,text: $text,titre:$titre)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    //.transition(AnyTransition.move(edge: .trailing)).animation(.default)
                 
             default :
                 connexion(choix: $choix)
                     .frame(maxWidth: 1920, maxHeight: 1080)
                     .background(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1))
-                    .transition(AnyTransition.move(edge: .leading)).animation(.default)
 
             }
             
@@ -227,7 +221,7 @@ struct connexion: View {
                         
                         Button(action: { self.click = true
                             retourData.RecupData(nomutilisateur: nomutilisateur, motdepasse: motdepasse)
-                            usleep(600000)
+                            usleep(800000)
                         })
                         {
 

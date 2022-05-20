@@ -51,7 +51,8 @@ struct Acceuil: View {
                                      }})
                                  {
                                      Image(systemName: "magnifyingglass")
-                                 }
+                                 } .buttonStyle(PlainButtonStyle())
+                                     .offset(x: -15)
                              }
                              .background(Capsule().fill(Color(red: 53/255, green: 54/255, blue: 62/255, opacity:1)))// couleur du fond
                              .offset(x: 150, y: -510)
@@ -145,27 +146,3 @@ struct Acceuil: View {
    
         
     
-
-/*
-let names = ["Holly", "Josh", "Rhonda", "Ted"]
-@State private var searchText = ""
- NavigationView {
-            List {
-                ForEach(searchResults, id: \.self) { name in
-                    NavigationLink(destination: Text(name)) {
-                        Text(name)
-                    }
-                }
-            }
-            //.searchable(text: $searchText)
-            .navigationTitle("Contacts")
-        }
- 
- 
- var searchResults: [String] {
-     if searchText.isEmpty {
-         return names
-     } else {
-         return names.filter { $0.contains(searchText) }
-     }
-*/

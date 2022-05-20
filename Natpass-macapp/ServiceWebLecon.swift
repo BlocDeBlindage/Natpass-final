@@ -13,7 +13,7 @@ struct ToDoResponseModel: Codable {
 
 class ServiceWeblecon : ObservableObject {
     @Published var resultatlecon : [ModeleLecon] = []
-    let adresselecon : URL
+    let adresselecon : URL  
     init() {
         
         guard let testUrllecon = URL(string: "http://172.16.21.32/natpass/categorie.php") else {

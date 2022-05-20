@@ -27,7 +27,7 @@ struct lecteur_video: View {
                         Spacer().frame( height: 25)
                         Text(titre)
                             .font(.largeTitle)
-                            .foregroundColor(.red)
+                            .foregroundColor(Color(red: 49/255, green: 140/255, blue: 255/255, opacity:1))
                             .padding()
                        
             VideoPlayer(player: AVPlayer(url:  URL(string: video)!))
@@ -77,7 +77,7 @@ struct lecteur_video: View {
                                  
                                  Image("logo Utilisateur")
                                       .resizable()
-                                      .frame(width: 40, height: 40 )
+                                      .frame(width: 40, height: 40)
                                       
                                      
                              }
@@ -87,12 +87,8 @@ struct lecteur_video: View {
                              .offset(x: 580, y: -510)
                              }
             }
+        }
     }
-    
-            
-            }
-            
-
 }
 
 
